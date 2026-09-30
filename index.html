@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Result Management</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Result Management System</h1>
+
+        <input 
+            type="text" 
+            id="searchInput" 
+            placeholder="Search by Name or Roll Number"
+        >
+
+        <select id="resultFilter">
+            <option value="all">All Students</option>
+            <option value="pass">Pass</option>
+            <option value="fail">Fail</option>
+        </select>
+
+        <select id="sortMarks">
+            <option value="none">Sort by Marks</option>
+            <option value="high">High to Low</option>
+            <option value="low">Low to High</option>
+        </select>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll No.</th>
+                    <th>Marks</th>
+                    <th>Percentage</th>
+                    <th>Grade</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentTable">
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

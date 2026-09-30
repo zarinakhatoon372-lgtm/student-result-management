@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f5f9;
+    padding: 30px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+input,
+select {
+    padding: 12px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+input {
+    width: 45%;
+}
+
+select {
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    margin-top: 25px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #333;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f7f7f7;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        overflow-x: auto;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    select {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    table {
+        min-width: 700px;
+    }
+}
+/* Pass and Fail styling */
+.pass {
+    color: green;
+    font-weight: bold;
+}
+
+.fail {
+    color: red;
+    font-weight: bold;
+}
+
+/* Hover effect on table rows */
+tbody tr:hover {
+    background: #e8f0ff;
+    transition: 0.2s;
+}
+
+/* Better heading */
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+}
